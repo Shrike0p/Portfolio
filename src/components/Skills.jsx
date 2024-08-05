@@ -7,101 +7,43 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 
-export const Skills=()=>{
-    return <div>
-        <hr
-          className="pt-10 border-t border-[#a8a4f4] opacity-35  "
-        ></hr>
-        <h1 className="pt-14 pb-8 text-4xl font-bold bg-[#0d2438] text-white">
-          Skills
-        </h1>
-        <div className="grid grid-cols-7 justify-items-center ml-10  text-white h-32 subpixel-antialiased pt-8 ">
-          <div></div>
-          <div className="relative w-16 h-20 group">
-            <motion.image
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <FaReact
-                alt=""
-                className="absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
-"
-              />
-            </motion.image>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              React
-            </div>
-          </div>
+import React from 'react';
+import SkillsCard from './Skillcard';
 
-          <div className="relative w-16 h-20 group">
-            <motion.image
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <TbBrandLeetcode
-                alt=""
-                className="text-[#a8a4f4]
- absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-              />
-            </motion.image>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Data Structures
-            </div>
-          </div>
 
-          <div className="relative w-16 h-20 group">
-            <motion.image
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <SiTailwindcss
-                alt=""
-                className="
- absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-              />
-            </motion.image>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              TailwindCSS
-            </div>
-          </div>
+const Skills = () => {
+  const skillCategories = [
+    {
+      title: 'Web Development',
+      skills: ['ReactJS', 'ExpressJS', 'NodeJS', 'JavaScript', 'Tailwind CSS', 'Bootstrap CSS'],
+      imageUrl: '../public/web.png'  // Replace with your image path
+    },
+    {
+      title: 'Machine Learning',
+      skills: ['Python', 'NumPy', 'Pandas'],
+      imageUrl: '/ml.png'  // Replace with your image path
+    },
+    {
+      title: 'Data Structures and Algorithm',
+      skills: ['C', 'C++'],
+      imageUrl: '/path/to/cloud-computing-logo.png'  // Replace with your image path
+    },
+    {
+      title: 'Cloud Computing',
+      skills: ['AWS'],
+      imageUrl: '/path/to/cloud-computing-logo.png'  // Replace with your image path
+    }
+  ];
 
-          <div className="relative w-16 h-20 group">
-            <motion.image
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <FaPython
-                alt=""
-                className="text-[#a8a4f4]
- absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-              />
-            </motion.image>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Python
-            </div>
-          </div>
-
-          <div className="relative w-16 h-20 group">
-            <motion.image
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <FiFigma
-                alt=""
-                className="
- absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-              />
-            </motion.image>
-            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              UI/UX Design
-            </div>
-            <div></div>
-          </div>
-          </div>
+  return (
+    <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {skillCategories.map((category, index) => (
+        <SkillsCard key={index} title={category.title} skills={category.skills} imageUrl={category.imageUrl} />
+      ))}
     </div>
-}
+  );
+};
+
+export default Skills;
+
+

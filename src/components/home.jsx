@@ -10,7 +10,7 @@ import { FiFigma } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
 import { useMotionValue, useTransform, animate } from "framer-motion";
 import { ProjectSection } from "./ProjectSection";
-import { Skills } from "./Skills";
+import  Skills  from "./Skills";
 
 const AnimatedText = ({ text }) => {
   const count = useMotionValue(0);
@@ -88,7 +88,9 @@ export function Home() {
           />
           <div className="h-8"></div>
         </div>
+        <div >
         <Skills/>
+        </div>
         <ProjectSection/>
       
       </div>
