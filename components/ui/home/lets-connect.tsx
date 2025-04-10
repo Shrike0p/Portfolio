@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Particles from "@tsparticles/react";
 import { motion } from "framer-motion";
@@ -24,7 +25,7 @@ export default function ContactMe() {
     };
 
     return (
-        <div className="relative w-full min-h-screen bg-black overflow-hidden py-16">
+        <div className="relative w-full py-16">
             {/* Star particles */}
             <Particles
                 id="contactStars"
