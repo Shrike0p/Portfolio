@@ -88,7 +88,7 @@ export default function MySkills() {
     ];
 
     return (
-        <div className="relative w-full min-h-screen bg-black overflow-hidden py-16">
+        <div id="skills" className="relative w-full min-h-screen bg-black overflow-hidden py-16">
             {/* Star particles */}
             <Particles
                 id="skillStars"

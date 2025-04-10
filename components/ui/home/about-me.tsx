@@ -3,6 +3,7 @@ import { useState } from "react";
 import Particles from "@tsparticles/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Prakhar from "@/public/prakhar-singh.jpeg";
 
 export default function AboutMe() {
     const [skillTab, setSkillTab] = useState("Skills");
@@ -10,7 +11,7 @@ export default function AboutMe() {
 
 
     return (
-        <div className="relative w-full min-h-screen bg-black overflow-hidden py-16">
+        <div id="about" className="relative w-full min-h-screen bg-black overflow-hidden py-16">
             {/* Star particles */}
             <Particles
                 id="aboutStars"
@@ -55,10 +56,10 @@ export default function AboutMe() {
                         <div className="relative rounded-lg overflow-hidden border border-gray-800 shadow-lg shadow-cyan-500/10">
                             <div className="w-full aspect-[4/3] relative">
                                 <Image
-                                    src="/api/placeholder/800/600"
+                                    src={Prakhar}
                                     alt="Profile Photo"
                                     layout="fill"
-                                    objectFit="cover"
+                                    objectFit="contain"
                                     className="z-10"
                                 />
                             </div>
@@ -119,7 +120,7 @@ export default function AboutMe() {
                                     transition={{ duration: 0.4 }}
                                 >
                                     <p className="mb-2">Bachelor of Technology in Computer Science</p>
-                                    <p className="text-gray-400">University of Engineering, 2018-2022</p>
+                                    <p className="text-gray-400">Kalinga Institute of Industrial Technology, 2021-2025</p>
                                 </motion.div>
                             )}
 

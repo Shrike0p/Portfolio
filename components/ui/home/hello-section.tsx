@@ -394,11 +394,11 @@ export default function PortfolioIntro() {
                 >
                     <div className="bg-gray-900/50 backdrop-blur-sm px-8 py-3 rounded-full">
                         <ul className="flex space-x-8">
-                            <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Home</a></li>
-                            <li><a href="#" className="text-white hover:text-gray-300 transition-colors">About</a></li>
-                            <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Skills</a></li>
-                            <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Projects</a></li>
-                            <li><a href="#" className="text-white hover:text-gray-300 transition-colors">Contacts</a></li>
+                            <li><a href="#home" className="text-white hover:text-gray-300 transition-colors">Home</a></li>
+                            <li><a href="#about" className="text-white hover:text-gray-300 transition-colors">About</a></li>
+                            <li><a href="#skills" className="text-white hover:text-gray-300 transition-colors">Skills</a></li>
+                            <li><a href="#projects" className="text-white hover:text-gray-300 transition-colors">Projects</a></li>
+                            <li><a href="#contacts" className="text-white hover:text-gray-300 transition-colors">Contacts</a></li>
                         </ul>
                     </div>
                 </motion.nav>
