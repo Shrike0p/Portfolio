@@ -95,50 +95,53 @@ export default function AboutMe() {
                                 ))}
                             </div>
 
-                            {skillTab === "Skills" && (
-                                <motion.ul
-                                    className="list-disc pl-5 space-y-2"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    <li>Node.js</li>
-                                    <li>Express</li>
-                                    <li>PostgreSQL</li>
-                                    <li>Sequelize</li>
-                                    <li>JavaScript</li>
-                                    <li>React</li>
-                                </motion.ul>
-                            )}
+                            <div className="w-full h-20 flex flex-col justify-between">
 
-                            {skillTab === "Education" && (
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    <p className="mb-2">Bachelor of Technology in Computer Science</p>
-                                    <p className="text-gray-400">Kalinga Institute of Industrial Technology, 2021-2025</p>
-                                </motion.div>
-                            )}
+                                {skillTab === "Skills" && (
+                                    <motion.ul
+                                        className="list-disc pl-5 space-y-2"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.4 }}
+                                    >
+                                        <li>Node.js</li>
+                                        <li>Express</li>
+                                        <li>PostgreSQL</li>
+                                        <li>Sequelize</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                    </motion.ul>
+                                )}
 
-                            {skillTab === "Certifications" && (
-                                <motion.ul
-                                    className="space-y-3"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    <li>
-                                        <p className="font-medium">Full Stack Development</p>
-                                        <p className="text-gray-400">Coding Bootcamp - 2022</p>
-                                    </li>
-                                    <li>
-                                        <p className="font-medium">AWS Cloud Practitioner</p>
-                                        <p className="text-gray-400">Amazon Web Services - 2023</p>
-                                    </li>
-                                </motion.ul>
-                            )}
+                                {skillTab === "Education" && (
+                                    <motion.div
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.4 }}
+                                    >
+                                        <p className="mb-2">Bachelor of Technology in Computer Science</p>
+                                        <p className="text-gray-400">Kalinga Institute of Industrial Technology, 2021-2025</p>
+                                    </motion.div>
+                                )}
+
+                                {skillTab === "Certifications" && (
+                                    <motion.ul
+                                        className="space-y-3"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.4 }}
+                                    >
+                                        <li>
+                                            <p className="font-medium">Full Stack Development</p>
+                                            <p className="text-gray-400">Coding Bootcamp - 2022</p>
+                                        </li>
+                                        <li>
+                                            <p className="font-medium">AWS Cloud Practitioner</p>
+                                            <p className="text-gray-400">Amazon Web Services - 2023</p>
+                                        </li>
+                                    </motion.ul>
+                                )}
+                            </div>
                         </div>
                     </motion.div>
                 </div>
