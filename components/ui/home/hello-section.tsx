@@ -6,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Background from "./background";
 import Image from "next/image";
 import Prakhar from "@/public/prakhar-singh.jpeg";
+import Navbar from "./navbar";
 
 export default function PortfolioIntro() {
     const [animationPhase, setAnimationPhase] = useState(0);
@@ -357,26 +358,26 @@ export default function PortfolioIntro() {
             {/* Stats section - appears after typewriter effect */}
             {animationPhase >= 1 && (
                 <motion.div
-                    className="absolute bottom-16 left-0 right-0 flex justify-center items-center space-x-16 px-8 z-30"
+                    className="absolute bottom-16 left-0 right-0 flex justify-center items-center space-x-4 lg:space-x-16 px-8 z-30"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 7 }}
                 >
                     <div className="text-center">
-                        <h3 className="text-4xl font-bold text-white">1+</h3>
-                        <p className="text-gray-400 mt-2">Experience</p>
+                        <h3 className="text-sm lg:text-4xl font-bold text-white">1+</h3>
+                        <p className="text-xs lg:text-base text-gray-400 mt-2">Experience</p>
                     </div>
                     <div className="text-center">
-                        <h3 className="text-4xl font-bold text-white">12+</h3>
-                        <p className="text-gray-400 mt-2">Projects</p>
+                        <h3 className="text-sm lg:text-4xl font-bold text-white">12+</h3>
+                        <p className="text-xs lg:text-base text-gray-400 mt-2">Projects</p>
                     </div>
                     <div className="text-center">
-                        <h3 className="text-4xl font-bold text-white">15+</h3>
-                        <p className="text-gray-400 mt-2">Events Covered</p>
+                        <h3 className="text-sm lg:text-4xl font-bold text-white">15+</h3>
+                        <p className="text-xs lg:text-base text-gray-400 mt-2">Events Covered</p>
                     </div>
                     <div className="text-center">
-                        <h3 className="text-4xl font-bold text-white">400+</h3>
-                        <p className="text-gray-400 mt-2">Coding Hours</p>
+                        <h3 className="text-sm lg:text-4xl font-bold text-white">400+</h3>
+                        <p className="text-xs lg:text-base text-gray-400 mt-2">Coding Hours</p>
                     </div>
                 </motion.div>
             )}
@@ -389,14 +390,8 @@ export default function PortfolioIntro() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 3.5 }}
                 >
-                    <div className="bg-gray-900/50 backdrop-blur-sm px-8 py-3 rounded-full">
-                        <ul className="flex space-x-8">
-                            <li><a href="#home" className="text-white hover:text-gray-300 transition-colors">Home</a></li>
-                            <li><a href="#about" className="text-white hover:text-gray-300 transition-colors">About</a></li>
-                            <li><a href="#skills" className="text-white hover:text-gray-300 transition-colors">Skills</a></li>
-                            <li><a href="#projects" className="text-white hover:text-gray-300 transition-colors">Projects</a></li>
-                            <li><a href="#contacts" className="text-white hover:text-gray-300 transition-colors">Contacts</a></li>
-                        </ul>
+                    <div className="w-full h-full relative">
+                        <Navbar />
                     </div>
                 </motion.nav>
             )}
