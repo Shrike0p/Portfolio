@@ -8,7 +8,7 @@ import Prakhar from "@/public/prakhar-singh.jpeg";
 export default function AboutMe() {
     const [skillTab, setSkillTab] = useState("Skills");
 
-
+    console.log("About Me component rendered");
 
     return (
         <div id="about" className="relative w-full min-h-screen bg-black overflow-hidden py-16">
