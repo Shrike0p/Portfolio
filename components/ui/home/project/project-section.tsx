@@ -42,8 +42,11 @@ const ProjectsSection = () => {
 
 
     return (
-        <div id="projects" className="relative py-20">
+        <div id="projects" className="relative  py-20">
             {/* 🟣 Particles Background */}
+            <div className="fixed inset-0 -z-50 bg-gradient-to-b from-black via-[#0c0c1a] to-black" />
+
+
             <Particles
                 id="tsparticles"
                 options={{
