@@ -390,7 +390,7 @@ export default function PortfolioIntro() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 3.5 }}
                 >
-                    <div className="w-full h-full relative">
+                    <div className="w-full md:w-fit relative">
                         <Navbar />
                     </div>
                 </motion.nav>
