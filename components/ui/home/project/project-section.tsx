@@ -8,6 +8,14 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
+            title: "Mood Journal",
+            des: "Mood Journal is a web application that allows users to track their mood and emotions over time.",
+            img: "/project/mood-journal.png",
+            iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg"],
+            link: "https://mood-journal-gules-ten.vercel.app",
+        },
+        {
+            id: 2,
             title: "Blogster App",
             des: "This is a blogging app using diffie hellman key exchange on MERN Stack.",
             img: "/project/blogster.png",
@@ -15,7 +23,7 @@ const ProjectsSection = () => {
             link: "https://blog-ster.vercel.app/signup",
         },
         {
-            id: 2,
+            id: 3,
             title: "Url Shortener App",
             des: "This Url Shortener app is built using NextJS, PostgreSQL and Supabase Database.",
             img: "/project/url.png",
@@ -23,7 +31,7 @@ const ProjectsSection = () => {
             link: "https://url-shortener-kappa-olive.vercel.app/",
         },
         {
-            id: 3,
+            id: 4,
             title: "Recipe Finder",
             des: "A Recipe Finder app using Edamam API.",
             img: "/project/recipe.png",
@@ -31,7 +39,7 @@ const ProjectsSection = () => {
             link: "https://recipe-finder-psi-neon.vercel.app/",
         },
         {
-            id: 4,
+            id: 5,
             title: "Banner Admin CRUD",
             des: "CRUD for Banner Admin.",
             img: "/project/banner.png",
