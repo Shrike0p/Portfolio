@@ -2,10 +2,18 @@
 
 import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "../../pin";
-import Particles from "@tsparticles/react"; // 👈 Add this
+import Particles from "@tsparticles/react"; 
 
 const ProjectsSection = () => {
     const projects = [
+        {
+            id: 0,
+            title: "Car Simulator",
+            des: "This is a car simulator game built using NextJS, ThreeJS, Game Physics and TailwindCSS.",
+            img: "/project/car-simulator.png",
+            iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg"],
+            link: "https://car-simulator-eight.vercel.app/",
+        },
         {
             id: 1,
             title: "Mood Journal",
